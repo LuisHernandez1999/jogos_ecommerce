@@ -6,8 +6,5 @@ def cadastrar_jogo(nome, publicadora, preco, data_lancamento, vendedor):
         publicadora=publicadora,
         preco=preco,
         data_lancamento=data_lancamento,
-        vendedor=vendedor
+        vendedor=vendedor  # ✅ nome do campo correto
     )
-
-
-    

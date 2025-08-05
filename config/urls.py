@@ -17,8 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from apps.criar_conta.views import criar_conta_view
+from apps.produto.views import cadastrar_jogo_view
+from apps.meio_recebimento.views import criar_meio_recebimento_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/criar_conta/',criar_conta_view,name='criar_conta')
+    path('api/criar_conta/',criar_conta_view,name='criar_conta'),
+    path('api/criar_jogo/',cadastrar_jogo_view,name='criar_jogo'),
+    path('api/meio_recebimento/',criar_meio_recebimento_view,name='meio_recebimento')
 ]
